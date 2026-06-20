@@ -106,6 +106,5 @@ int main()
 }while(i != 4);
     printf("==========================\n");
     printf("Total bill with gst = %g\n",(float)total-(total*0.18));
-    printf("Thank you for visiting\n");
     printf("==========================\n");
 }
