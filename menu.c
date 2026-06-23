@@ -19,52 +19,61 @@ int main()
         printf("1.Gobi 65 = 100\n2.Chicken 65 = 120\n3.Chilli chicken = 150\n");
         printf("Item: ");
         scanf("%d",&item);
-        printf("Quantity: ");
-        scanf("%d",&quant);
-        switch(item)
+        if(item>=1 && item<=3)
         {
-            case 1:
-            price=100*quant;
-            g+=quant;
-            break;
-            case 2:
-            price=120*quant;
-            c+=quant;
-            break;
-            case 3:
-            price=150*quant;
-            cc+=quant;
-            break;
-            default:
-            printf("Noo item mentioned");
-            break;
+            printf("Quantity: ");
+            scanf("%d",&quant);
+            switch(item)
+            {
+                case 1:
+                price=100*quant;
+                g+=quant;
+                break;
+                case 2:
+                price=120*quant;
+                c+=quant;
+                break;
+                case 3:
+                price=150*quant;
+                cc+=quant;
+                break;
+            }
+        }
+        else
+        {
+            printf("Noo item mentioned2\n");
         }
         break;
+
 
         case '2':
         printf("You have chosen main course\n");
         printf("1.Chicken biryani = 200 \n2.Naan and Butter chicken = 180\n3.Thali = 320\n");
         printf("Item: ");
         scanf("%d",&item);
-        printf("Quantity: ");
-        scanf("%d",&quant);
-        switch(item)
+        if(item>=1 && item<=3)
         {
-            case 1:
-            price=200*quant;
-            cb+=quant;
-            break;
-            case 2:
-            price=180*quant;
-            nb+=quant;
-            break;
-            case 3:
-            price=320*quant;
-            t+=quant;
-            break;
-            default:
-            printf("Noo item mentioned");
-            break;
+            printf("Quantity: ");
+            scanf("%d",&quant);
+            switch(item)
+            {
+                case 1:
+                price=200*quant;
+                cb+=quant;
+                break;
+                case 2:
+                price=180*quant;
+                nb+=quant;
+                break;
+                case 3:
+                price=320*quant;
+                t+=quant;
+                break;
+            }
+        }
+        else
+        {
+            printf("Noo item mentioned\n");
         }
         break;
 
@@ -73,25 +82,32 @@ int main()
         printf("1.Ice cream = 50 \n2.Gulaab jamun = 60 \n3.Falooda = 100\n");
         printf("Item: ");
         scanf("%d",&item);
-        printf("Quantity: ");
-        scanf("%d",&quant);
-        switch(item)
+        if(item>=1 && item<=3)
         {
-            case 1:
-            price=50*quant;
-            ic+=quant;
-            break;
-            case 2:
-            price=60*quant;
-            gj+=quant;
-            break;
-            case 3:
-            price=100*quant;
-            f+=quant;
-            break;
-            default:
+            printf("Quantity: ");
+            scanf("%d",&quant);
+            switch(item)
+            {
+                case 1:
+                price=50*quant;
+                ic+=quant;
+                break;
+                case 2:
+                price=60*quant;
+                gj+=quant;
+                break;
+                case 3:
+                price=100*quant;
+                f+=quant;
+                break;
+                default:
+                printf("Noo item mentioned\n");
+                break;
+            }
+        }
+        else
+        {
             printf("Noo item mentioned");
-            break;
         }
         break;
 
