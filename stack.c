@@ -54,6 +54,12 @@ int main()
             break;
             case 4:
             //search element in stack
+            if(size == 0)
+            {
+                printf("\"Queue is empty\"\n");
+                printf("\n");
+                break;
+            }
             int n;
             printf("Enter element to search : ");
             scanf("%d",&n);
