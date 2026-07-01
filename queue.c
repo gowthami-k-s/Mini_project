@@ -2,11 +2,12 @@
 int main()
 {
     //Implementation of Queue using array
-    int arr[5];
+    int arr[5],i;
     int op,size = 0;
     while(1)
     {
-        printf("1. Insertion\n2. Deletion\n3. Printing the Queue\n4. Exit\nEnter Your choice : ");
+        printf("1. Insertion\n2. Deletion\n3. Printing the Queue\n");
+        printf("4. Search element\n5. Exit\nEnter Your choice : ");
         scanf("%d",&op);
         switch(op)
         {
@@ -56,6 +57,29 @@ int main()
             printf("\n\n");
             break;
             case 4:
+            //search element in stack
+            if(size == 0)
+            {
+                printf("\"Queue is empty\"\n");
+                printf("\n");
+                break;
+            }
+            int n;
+            printf("Enter element to search : ");
+            scanf("%d",&n);
+            for(i=0 ; i<size ; i++)
+            {
+                if(n == arr[i])
+                {
+                    printf("Element found\n");
+                    printf("\n");
+                    break;
+                }
+            }
+            printf("Element not found\n");
+            printf("\n");
+            break;
+            case 5:
             //Exit Queue
             printf("\"Exiting.......\"\n");
             return 0;
