@@ -56,7 +56,7 @@ int main()
             //search element in stack
             if(size == 0)
             {
-                printf("\"Queue is empty\"\n");
+                printf("\"Stack is empty\"\n");
                 printf("\n");
                 break;
             }
