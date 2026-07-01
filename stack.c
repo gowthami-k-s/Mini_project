@@ -2,17 +2,18 @@
 int main()
 {
     //Implementation of stack using array
-    int arr[5];
+    int arr[10],i;
     int op,size = 0;
     while(1)
     {
-        printf("1. Insertion\n2. Deletion\n3. Printing the Stack\n4. Exit\nEnter Your choice : ");
+        printf("1. Insertion\n2. Deletion\n3. Printing the Stack\n");
+        printf("4. Search element\n5. Exit\nEnter Your choice : ");
         scanf("%d",&op);
         switch(op)
         {
             case 1:
             //Insertion of elements into Stack
-            if(size >= 5)
+            if(size >= 10)
             {
                 printf("\"Stack is full\"\n");
                 printf("\n");
@@ -32,7 +33,7 @@ int main()
                 printf("\n");
                 break;
             }
-            printf("\"Deleted element: %d\"3\n", arr[size - 1]);
+            printf("\"Deleted element: %d\"\n", arr[size - 1]);
             printf("\n");
             size--;
             break;
@@ -45,13 +46,30 @@ int main()
                 break;
             }
             printf("Elements of Stack : ");
-            for(int i=0 ; i<size ; i++)
+            for(i=0 ; i<size ; i++)
             {
                 printf("%d ",arr[i]);
             }
             printf("\n\n");
             break;
             case 4:
+            //search element in stack
+            int n;
+            printf("Enter element to search : ");
+            scanf("%d",&n);
+            for(i=0 ; i<size ; i++)
+            {
+                if(n == arr[i])
+                {
+                    printf("Element found\n");
+                    printf("\n");
+                    break;
+                }
+            }
+            printf("Element not found\n");
+            printf("\n");
+            break;
+            case 5:
             //Exit stack
             printf("\"Exiting.......\"\n");
             return 0;
