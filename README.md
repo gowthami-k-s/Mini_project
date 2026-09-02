@@ -75,5 +75,4 @@ Run the program:
 * Basic C programming
 
 ## Author
-
 **K S Gowthami**
